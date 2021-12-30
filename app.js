@@ -29,6 +29,7 @@ app.post('/home', (req,res)=>{
   }
 });
 
-app.listen('5050',()=>{
+let port=process.env.PORT || 5050;
+app.listen(port,()=>{
   console.log('Running at port 5050');
 });
