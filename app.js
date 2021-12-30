@@ -6,7 +6,7 @@ app.set('view engine', 'ejs');
 app.use(express.urlencoded({extended:false}));
 app.use(express.static(__dirname+'/public'));
 
-app.get('/home',function(req,res) {
+app.get('/',function(req,res) {
   res.render('home');
 });
 
@@ -15,7 +15,7 @@ app.get('/homePage',function(req,res) {
 });
 
 
-app.post('/home', (req,res)=>{
+app.post('/', (req,res)=>{
   const username=req.body.email;
   const pass=req.body.password;
   var format=/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
@@ -25,7 +25,7 @@ app.post('/home', (req,res)=>{
   }
   else
   {
-  	res.redirect('/home');	
+  	res.redirect('/');	
   }
 });
 
