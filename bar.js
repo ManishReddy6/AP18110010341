@@ -2,8 +2,8 @@
 var chart = new ej.charts.Chart({
     //Initializing Primary X Axis
     primaryXAxis: {
-        valueType: "Category",
-        title: "Months"
+        valueType: "name",
+        title: "revenue"
     },
     //Initializing Primary Y Axis
     primaryYAxis: {
@@ -32,8 +32,8 @@ chart.appendTo("#container1");
 var chart1 = new ej.charts.Chart({
     //Initializing Primary X Axis
     primaryXAxis: {
-        valueType: "Category",
-        title: "Months"
+        valueType: "name",
+        title: "revenue"
     },
     //Initializing Primary Y Axis
     primaryYAxis: {
